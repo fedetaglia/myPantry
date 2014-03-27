@@ -17,11 +17,13 @@
 
 $navbar : #FF6A00;
 $light_navbar : $navbar + #444;
+
 $landing : #5DD0C0;
 $light_landing : $landing + #444;
 
 $main_step1 : #476BD6;
 $light_step1 : $main_step1 + #444;
+
 
 $main_step2: #FF5900;
 $main_step2 : $main_step2 + #444;
@@ -405,13 +407,13 @@ div#footer {
 
 .landing-container {
   text-align: center;
-  color: $landing;
-  font-weight: bold;
-  margin-top: 100px;
-  font-size: 60px;
+  color:white;
+  
+  margin-top: 40px;
   h1 {
-    font-size: 100px;
-
+    font-size: 120px;
+    font-weight: bold;
+    color: $landing;
     a {
       color: $landing;
     }
@@ -421,7 +423,11 @@ div#footer {
       background-color: none;
     }
   }
-
+  h3 {
+  font-size: 40px;
+  font-weight: bold;
+  }
+  
 }
 
 /* i for closing */
