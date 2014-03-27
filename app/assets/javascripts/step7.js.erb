@@ -1,0 +1,73 @@
+var step7 = {
+  initialize: function(aggregator){
+    this.aggregator = aggregator;
+    this.aggregator.step = 7;
+    this.pageSetting();
+    this.renderSelection();
+    // this.activateSaveButton();
+  },
+
+  pageSetting : function(){
+    $('.step7').addClass('selected')
+    $('.section-title').html("Shopping List")
+    
+  },
+
+  updateSavingForm: function(){
+    $('.next').hide();
+    $('#new_shopping_list').show();
+    $('#shopping_list_name').val(step7.aggregator.name);
+    $('#shopping_list_aggregator').val(JSON.stringify(step7.aggregator));
+    $('#shopping_list_ingredients').val(JSON.stringify(step7.shoppingList));
+  },
+
+  renderSelection: function(){
+    $('.section').empty();
+    this.getShoppingList();
+  },
+
+
+  getShoppingList: function(){
+    var result = $.ajax({
+      url: '/recipes/search_detail',
+      data: {"aggregator": step7.aggregator},
+      dataType: 'json',
+      type: 'get'
+    })    
+    
+    var target = document.getElementById('spin');
+    var spinner = new Spinner(opts).spin();
+    target.appendChild(spinner.el);
+    
+    result.done(function(data){
+      spinner.stop();
+      step7.shoppingList = data;
+      step7.renderShoppingList(data);
+      step7.updateSavingForm()
+    })
+  },
+
+  renderShoppingList: function(myShoppingList) {
+    list = myShoppingList['ingredient']
+    $shoppingList = $('<div class="shopping-list"></div>')
+
+    $.each(list,function(index,item){
+      $listItem = $('<div class="row list-item"></div>')
+      $ingredientItem = $('<div class="ingredient-item">' + item.ingredient +'</div>')
+      $listItem.append($ingredientItem)
+      $listQty = $('<div class="list-qty"></div>')
+      $.each(item.value,function(i,unit){
+        $qtyItem = $('<div class="list-qty-item"></div>')
+        $qty = $('<div class="qty-item">' + unit.qta + '</div>')
+        $unit = $('<div class="unit-item">' + unit.unit + '</div>')
+        $qtyItem.append($qty)
+        $qtyItem.append($unit)
+        $listQty.append($qtyItem)
+      });
+      $listItem.append($listQty)
+      $shoppingList.append($listItem)
+    })
+    $('.section').append($shoppingList)
+  }
+
+}

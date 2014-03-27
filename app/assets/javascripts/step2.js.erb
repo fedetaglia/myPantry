@@ -1,0 +1,81 @@
+
+var step2 = {
+
+  initialize: function(aggregator){
+    this.aggregator = aggregator;
+    this.aggregator.step = 2;
+    this.renderSelection();
+    this.pageSetting();
+    this.nextButtonListener();
+  },
+
+  pageSetting : function(){
+    $('.step2').addClass('selected')
+    $('.section-title').html("breakfasts")
+  },
+
+  renderSelection: function(){
+    $('.section').empty();
+    this.getDishes();
+  },
+
+  nextButtonListener: function(){
+    $('.next').on("click",function(){
+      if (step2.check()) {
+        $('.step2').removeClass("selected");
+        $(this).off('click');
+        selected = $('.dish-selected');
+        ids = [];
+        if (selected.length > 0) {
+          $.each(selected, function(index,value){
+            ids.push(value.id)
+          })
+        }
+        step2.aggregator.selectedBreakfasts = ids
+        step3.initialize(step2.aggregator)
+      }
+    })
+  },
+
+  getDishes: function(){
+    var result = $.ajax({
+      url: '/recipes/search',
+      data: {"aggregator": step2.aggregator, "course": "course-Breakfast and Brunch"},
+      dataType: 'json',
+      type: 'get'
+    });
+    
+    var target = document.getElementById('spin');
+    var spinner = new Spinner(opts).spin();
+    target.appendChild(spinner.el);
+    
+    result.done(function(data){
+      spinner.stop();
+      if ( $(".dishes-list").length > 0 ) {
+        $('.dishes-list').empty();
+      } else {
+        $(".section").append('<div class="dishes-list"></div>'); 
+      }
+      
+      _.each(data, function(dish){  
+        var image = "<img src='" + dish.smallImageUrls[0] + "' alt='" + dish.recipeName + " class='dish-image'>"
+        var title = "<p class='dish-name'>" + dish.recipeName + "</p>"
+
+        var dishDiv = "<div id='"+dish.id+"' class='dish-item'>" + image + title + "</div>"
+        $('.dishes-list').append(dishDiv)
+      })
+
+
+      $('.dish-item').on('click', function(){
+        $(this).toggleClass('dish-selected');
+      })
+  }) 
+
+  },// x search for dishes
+
+  check: function(){
+    return true;
+  }
+
+
+}

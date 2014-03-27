@@ -1,0 +1,163 @@
+
+var step1 = {
+  initialize: function(aggregator){
+    this.aggregator = aggregator;
+    this.aggregator.step = 1
+    this.pageSetting();
+    this.renderSelection();
+    this.nextButtonListener();
+  },
+
+
+  pageSetting : function(){
+    $('.title').html(step1.aggregator.name)
+    $('.step1').addClass('selected')
+  },
+
+  renderSelection: function(){
+    this.renderPeople();
+    this.renderDays();
+    this.renderDiets();
+    this.renderAllergy();
+    this.renderHoliday();
+    this.renderCuisine();
+  },
+
+  renderPeople: function(){
+    max_people = 15
+    people = ""
+    html = "<div class='intro-setting people'></div>"
+    
+    for( var i=1; i <= max_people; i = i+1) {
+      var peopleIcon = "<span id='p_"+ i +"' class='glyphicon glyphicon-user'></span> "
+      html = $(html).append(peopleIcon)
+    }
+    html = $(html).append('<span class="intro-selected people-selected">how many people?</span>')
+    $('.section').append(html)
+    $('.glyphicon-user').on('mouseover',function(){
+      hover = parseInt((this.id).replace("p_",""))
+      for (var i=1;i<=hover;i=i+1) {
+        id = 'p_' + i
+        $('#'+ id).addClass('hover')
+      }
+      for (var i=hover+1; i<=max_people;i=i+1) {
+        id = 'p_' + i
+        $('#'+ id).removeClass('hover')
+      }
+    });
+
+    $('.glyphicon-user').on('mouseout',function(){
+      for (var i=1;i<=max_people;i=i+1) {
+        id = 'p_' + i
+        $('#'+ id).removeClass('hover')
+      }
+    });
+
+
+    $('.glyphicon-user').on('click',function(){
+    people = parseInt((this.id).replace("p_",""))
+    for (var i=1;i<=people;i=i+1) {
+      id = 'p_' + i
+      $('#'+ id).removeClass('hover')
+      $('#'+ id).addClass('selected')
+    }
+    for (var i=people+1; i<=max_people;i=i+1) {
+      id = 'p_' + i
+      $('#'+ id).removeClass('hover')
+      $('#'+ id).removeClass('selected')
+    }
+    html = people
+    $('.people-selected').html(html)
+    step1.aggregator.people = people
+    })
+  },
+
+  renderDays: function (){
+    max_days = 15
+    days = ""
+    html = "<div class='intro-setting days'></div>"
+    for (i=1;i<=max_days;i =i +1 ) {
+      var daysIcon = "<span id='d_" + i + "' class='glyphicon glyphicon-certificate'></span> "
+      html = $(html).append(daysIcon)
+    }
+    html = $(html).append('<span class="intro-selected days-selected">how many days?</span>')
+    $('.section').append(html)
+    
+    $('.glyphicon-certificate').on('mouseover',function(){
+      days = parseInt((this.id).replace("d_",""))
+      for (var i=1;i<=days;i=i+1) {
+        id = 'd_' + i
+        $('#'+ id).addClass('hover')
+      }
+      for (var i=days+1; i<=max_days;i=i+1) {
+        id = 'd_' + i
+        $('#'+ id).removeClass('hover')
+      }
+    })
+
+    $('.glyphicon-certificate').on('mouseout',function(){
+      for (var i=1;i<=max_days;i=i+1) {
+        id = 'd_' + i
+        $('#'+ id).removeClass('hover')
+      }
+    });
+
+    $('.glyphicon-certificate').on('click',function(){
+    days = parseInt((this.id).replace("d_",""))
+    for (var i=1;i<=days;i=i+1) {
+      id = 'd_' + i
+      $('#'+ id).removeClass('hover')
+      $('#'+ id).addClass('selected')
+    }
+    for (var i=days+1; i<=max_days;i=i+1) {
+      id = 'd_' + i
+      $('#'+ id).removeClass('hover')
+      $('#'+ id).removeClass('selected')
+    }
+    html = days
+    $('.days-selected').html(html)
+    step1.aggregator.days = days  
+    })
+
+  },
+
+  renderDiets: function(){
+    html = "<div class='todo'># TODO : filter for diets</div>"
+    $('.section').append(html)
+  },
+
+  renderAllergy: function(){
+    html = "<div class='todo'># TODO : filter for allergies</div>"
+    $('.section').append(html)
+  },
+
+  renderHoliday: function(){
+    html = "<div class='todo'># TODO : filter for  holidays meal</div>"
+    $('.section').append(html)
+  },
+
+  renderCuisine: function(){
+    html = "<div class='todo'># TODO : filter for  cuisine type</div>"
+    $('.section').append(html)
+  },
+
+  nextButtonListener:function(){
+    $('.next').on("click",function(){
+      if (step1.check()) {
+        $(this).off('click');
+        $('.step1').removeClass("selected")
+        step2.initialize(step1.aggregator)
+      }
+    })
+  },
+
+  check: function(){
+    return true;
+  }
+
+}
+
+
+
+
+

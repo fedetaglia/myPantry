@@ -18,3 +18,4 @@
 # Ignore db file and .env for keys
 /config/database.yml
 .env
+api_test

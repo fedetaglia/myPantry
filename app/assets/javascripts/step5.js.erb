@@ -1,0 +1,74 @@
+var step5 = {
+
+  initialize: function(aggregator){
+    this.aggregator = aggregator;
+    this.aggregator.step = 5;
+    this.renderSelection();
+    this.pageSetting();
+    this.nextButtonListener();
+  },
+
+  pageSetting : function(){
+    $('.step5').addClass('selected')
+    $('.section-title').html("dinner")
+  },
+
+  renderSelection: function(){
+    $('.section').empty();
+    this.getDishes();
+  },
+
+  getDishes: function(){
+    var result = $.ajax({
+      url: '/recipes/search',
+      data: {"aggregator": step5.aggregator, "course": "course-Main Dishes"},
+      dataType: 'json',
+      type: 'get'
+    })
+    
+    var target = document.getElementById('spin');
+    var spinner = new Spinner(opts).spin();
+    target.appendChild(spinner.el);
+    
+    result.done(function(data){
+      spinner.stop();
+      if ( $(".dishes-list").length > 0 ) {
+        $('.dishes-list').empty();
+      } else {
+        $(".section").append('<div class="dishes-list"></div>'); 
+      }
+      
+      _.each(data, function(dish){  
+        var image = "<img src='" + dish.smallImageUrls[0] + "' alt='" + dish.recipeName + " class='dish-image'>"
+        var title = "<p>" + dish.recipeName + "</p>"
+
+        var dishDiv = "<div id='"+dish.id+"' class='dish-item'>" + image + title + "</div>"
+        $('.dishes-list').append(dishDiv)
+      })
+
+      $('.dish-item').on('click', function(){
+        $(this).toggleClass('dish-selected');
+      })
+    }) // x search for dishes
+  },
+  nextButtonListener:function(){
+  $('.next').on("click",function(){
+    if (step5.check()) {
+      $('.step5').removeClass("selected")
+      $(this).off('click');
+      var selected = $('.dish-selected')
+      var ids = []
+      $.each(selected, function(index,value){
+         ids.push(value.id)
+      })
+      step5.aggregator.selectedDinners = ids
+      step6.initialize(step5.aggregator)
+    }
+  })
+  },
+
+  check: function(){
+    return true;
+  }
+
+}

@@ -47,6 +47,12 @@ end
 # Use bootstrap sass gem for styling
 gem 'bootstrap-sass'
 
+# gem for API query
+gem "httparty"
+
+
+gem 'devise'
+
 
 group :development, :test do
   # testing 
@@ -57,6 +63,8 @@ group :development, :test do
   # gem for debugging
   gem 'pry'
   gem 'pry-debugger'
+  gem 'simplecov', :require => false
+  gem 'factory_girl_rails'
 end
 
 group :production do

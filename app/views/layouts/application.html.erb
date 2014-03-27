@@ -7,8 +7,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= render 'layouts/header' %>
+<div class="container">
+      <div class="row row-alert">
+      <% if notice %>
+        <p class="alert alert-notice"><%= notice %><i class='close'></i></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert alert-error"><%= alert %><i class='close'></i></p>
+      <% end %> 
+      </div>
+  <%= yield %>
+</div>
+<%= render 'layouts/footer' %>
 
-<%= yield %>
+<script>
+  window.onload = function () { 
+  $('.row-alert').on("click",'.close',function() {
+    this.parentNode.parentNode.removeChild(this.parentNode);
+  });
+}
+</script>
 
 </body>
 </html>

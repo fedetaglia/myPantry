@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @recipe.name %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @recipe.course %>
+</p>
+
+<p>
+  <strong>Yummly:</strong>
+  <%= @recipe.yummly_id %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @recipe.url %>
+</p>
+
+<p>
+  <strong>Img url:</strong>
+  <%= @recipe.img_url %>
+</p>
+
+<p>
+  <strong>Number of servings:</strong>
+  <%= @recipe.number_of_servings %>
+</p>
+
+<p>
+  <strong>Source recipe url:</strong>
+  <%= @recipe.source_recipe_url %>
+</p>
+
+<p>
+  <strong>Source display name:</strong>
+  <%= @recipe.source_display_name %>
+</p>
+
+<p>
+  <strong>Fetch json:</strong>
+  <%= @recipe.fetch_json %>
+</p>
+
+<%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+<%= link_to 'Back', recipes_path %>

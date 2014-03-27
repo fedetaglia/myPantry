@@ -1,0 +1,3437 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>Code coverage for Getpantry</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script src='./assets/0.8.0/application.js' type='text/javascript'></script>    
+    <link href='./assets/0.8.0/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/png" href="./assets/0.8.0/favicon_red.png" />
+    <link rel="icon" type="image/png" href="./assets/0.8.0/favicon.png" />
+  </head>
+  
+  <body>
+    <div id="loading">
+      <img src="./assets/0.8.0/loading.gif" alt="loading"/>
+    </div>
+    <div id="wrapper" style="display:none;">
+      <div class="timestamp">Generated <abbr class="timeago" title="2014-03-27T19:44:34+11:00">2014-03-27T19:44:34+11:00</abbr></div>
+      <ul class="group_tabs"></ul>
+
+      <div id="content">
+        <div class="file_list_container" id="AllFiles">
+  <h2>
+    <span class="group_name">All Files</span>
+    (<span class="covered_percent"><span class="red">75.47%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         2.45
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="AllFiles"></a>
+  <div>
+    <b>9</b> files in total.
+    <b>265</b> relevant lines. 
+    <span class="green"><b>200</b> lines covered</span> and
+    <span class="red"><b>65</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#abb27579c985fbac24c241ddb12e6aa30047b60a" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="red strong">71.43 %</td>
+        <td>17</td>
+        <td>7</td>
+        <td>5</td>
+        <td>2</td>
+        <td>0.7</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#3d0367591926ccf484642915f3abb3c978a727aa" class="src_link" title="app/controllers/recipes_controller.rb">app/controllers/recipes_controller.rb</a></td>
+        <td class="red strong">42.17 %</td>
+        <td>151</td>
+        <td>83</td>
+        <td>35</td>
+        <td>48</td>
+        <td>1.2</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#625e5b1578059b0d6bcc6d93de55ecf6fd515a10" class="src_link" title="app/controllers/shopping_lists_controller.rb">app/controllers/shopping_lists_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>80</td>
+        <td>39</td>
+        <td>39</td>
+        <td>0</td>
+        <td>2.8</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#c596e26bf9e0b89359d0866bb02f91b8f1d21e4b" class="src_link" title="app/models/ingredient_fetch.rb">app/models/ingredient_fetch.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>31</td>
+        <td>17</td>
+        <td>17</td>
+        <td>0</td>
+        <td>2.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#d13a9175bf091ee19e45f0b60c32e5fa692777b5" class="src_link" title="app/models/recipe.rb">app/models/recipe.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#a6c82fcbff0dc9e3ec83d119c0a3521151d43b8c" class="src_link" title="app/models/recipe_fetch.rb">app/models/recipe_fetch.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>113</td>
+        <td>68</td>
+        <td>68</td>
+        <td>0</td>
+        <td>4.1</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#79d41b4270db6912f37b0bb30cb9dd7c191875d8" class="src_link" title="app/models/search.rb">app/models/search.rb</a></td>
+        <td class="red strong">16.67 %</td>
+        <td>30</td>
+        <td>18</td>
+        <td>3</td>
+        <td>15</td>
+        <td>0.2</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#369bd2126ef2aa1ed18e762b23df049d4ee677bb" class="src_link" title="app/models/shopping_list.rb">app/models/shopping_list.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>8</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#777c2d24a943708a2ecbf953a5110dbe6be19717" class="src_link" title="app/models/shopping_list_fetch.rb">app/models/shopping_list_fetch.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>37</td>
+        <td>24</td>
+        <td>24</td>
+        <td>0</td>
+        <td>4.2</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+
+        
+          <div class="file_list_container" id="Controllers">
+  <h2>
+    <span class="group_name">Controllers</span>
+    (<span class="covered_percent"><span class="red">61.24%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         1.66
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Controllers"></a>
+  <div>
+    <b>3</b> files in total.
+    <b>129</b> relevant lines. 
+    <span class="green"><b>79</b> lines covered</span> and
+    <span class="red"><b>50</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#abb27579c985fbac24c241ddb12e6aa30047b60a" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="red strong">71.43 %</td>
+        <td>17</td>
+        <td>7</td>
+        <td>5</td>
+        <td>2</td>
+        <td>0.7</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#3d0367591926ccf484642915f3abb3c978a727aa" class="src_link" title="app/controllers/recipes_controller.rb">app/controllers/recipes_controller.rb</a></td>
+        <td class="red strong">42.17 %</td>
+        <td>151</td>
+        <td>83</td>
+        <td>35</td>
+        <td>48</td>
+        <td>1.2</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#625e5b1578059b0d6bcc6d93de55ecf6fd515a10" class="src_link" title="app/controllers/shopping_lists_controller.rb">app/controllers/shopping_lists_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>80</td>
+        <td>39</td>
+        <td>39</td>
+        <td>0</td>
+        <td>2.8</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Models">
+  <h2>
+    <span class="group_name">Models</span>
+    (<span class="covered_percent"><span class="yellow">88.97%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         3.2
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Models"></a>
+  <div>
+    <b>6</b> files in total.
+    <b>136</b> relevant lines. 
+    <span class="green"><b>121</b> lines covered</span> and
+    <span class="red"><b>15</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#c596e26bf9e0b89359d0866bb02f91b8f1d21e4b" class="src_link" title="app/models/ingredient_fetch.rb">app/models/ingredient_fetch.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>31</td>
+        <td>17</td>
+        <td>17</td>
+        <td>0</td>
+        <td>2.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#d13a9175bf091ee19e45f0b60c32e5fa692777b5" class="src_link" title="app/models/recipe.rb">app/models/recipe.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#a6c82fcbff0dc9e3ec83d119c0a3521151d43b8c" class="src_link" title="app/models/recipe_fetch.rb">app/models/recipe_fetch.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>113</td>
+        <td>68</td>
+        <td>68</td>
+        <td>0</td>
+        <td>4.1</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#79d41b4270db6912f37b0bb30cb9dd7c191875d8" class="src_link" title="app/models/search.rb">app/models/search.rb</a></td>
+        <td class="red strong">16.67 %</td>
+        <td>30</td>
+        <td>18</td>
+        <td>3</td>
+        <td>15</td>
+        <td>0.2</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#369bd2126ef2aa1ed18e762b23df049d4ee677bb" class="src_link" title="app/models/shopping_list.rb">app/models/shopping_list.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>8</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#777c2d24a943708a2ecbf953a5110dbe6be19717" class="src_link" title="app/models/shopping_list_fetch.rb">app/models/shopping_list_fetch.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>37</td>
+        <td>24</td>
+        <td>24</td>
+        <td>0</td>
+        <td>4.2</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Mailers">
+  <h2>
+    <span class="group_name">Mailers</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="red">
+         0.0
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Mailers"></a>
+  <div>
+    <b>0</b> files in total.
+    <b>0.0</b> relevant lines. 
+    <span class="green"><b>0.0</b> lines covered</span> and
+    <span class="red"><b>0.0</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Helpers">
+  <h2>
+    <span class="group_name">Helpers</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="red">
+         0.0
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Helpers"></a>
+  <div>
+    <b>0</b> files in total.
+    <b>0.0</b> relevant lines. 
+    <span class="green"><b>0.0</b> lines covered</span> and
+    <span class="red"><b>0.0</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Libraries">
+  <h2>
+    <span class="group_name">Libraries</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="red">
+         0.0
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Libraries"></a>
+  <div>
+    <b>0</b> files in total.
+    <b>0.0</b> relevant lines. 
+    <span class="green"><b>0.0</b> lines covered</span> and
+    <span class="red"><b>0.0</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+      </div>
+    
+      <div id="footer">
+        Generated by <a href="http://github.com/colszowka/simplecov">simplecov</a> v0.8.2 
+        and simplecov-html v0.8.0<br/>
+        using RSpec
+      </div>
+    
+      <div class="source_files">
+      
+        <div class="source_table" id="abb27579c985fbac24c241ddb12e6aa30047b60a">
+  <div class="header">
+    <h3>app/controllers/application_controller.rb</h3>
+    <h4><span class="red">71.43 %</span> covered</h4>
+    <div>
+      <b>7</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ApplicationController &lt; ActionController::Base</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">  # Prevent CSRF attacks by raising an exception.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">  # For APIs, you may want to use :null_session instead.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  protect_from_forgery with: :exception</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_filter :authenticate_user!</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">protected</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">def configure_permitted_parameters</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">  devise_parameter_sanitizer.for(:sign_up) &lt;&lt; :username</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">  devise_parameter_sanitizer.for(:account_update) &lt;&lt; :username</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="3d0367591926ccf484642915f3abb3c978a727aa">
+  <div class="header">
+    <h3>app/controllers/recipes_controller.rb</h3>
+    <h4><span class="red">42.17 %</span> covered</h4>
+    <div>
+      <b>83</b> relevant lines. 
+      <span class="green"><b>35</b> lines covered</span> and
+      <span class="red"><b>48</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class RecipesController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_action :set_recipe, only: [:show, :edit, :update, :destroy]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  # GET /recipes</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  # GET /recipes.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @recipes = Recipe.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def search</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">    @search_parameter = load_search_parameters()</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">    course_id = params[&quot;course&quot;]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="15">
+          
+          
+          <code class="ruby">    course = JSON.parse(@search_parameter[&#39;course&#39;].value).select {|course| course[&#39;id&#39;] == course_id}</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
+          
+          <code class="ruby">    course_search_key = course[0][&#39;searchValue&#39;]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
+          
+          <code class="ruby">    search = &quot;https://api.yummly.com/v1/api/recipes?_app_id=#{ENV[&#39;YUMMLY_APP_ID&#39;]}&amp;_app_key=#{ENV[&#39;YUMMLY_APP_KEY&#39;]}&amp;q=&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
+          
+          <code class="ruby">    courses = &quot;&amp;allowedCourse[]=#{course_search_key}&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="19">
+          
+          
+          <code class="ruby">    number_of_recipes = &quot;&amp;maxResult=15&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="20">
+          
+          
+          <code class="ruby">    requirepicture = &quot;&amp;requirePictures=true&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">    string = search + courses + number_of_recipes + requirepicture</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="23">
+          
+          
+          <code class="ruby">    answer = HTTParty.get(URI.escape(string))</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="24">
+          
+          
+          <code class="ruby">    if answer[&#39;matches&#39;].count != 0</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="25">
+          
+          
+          <code class="ruby">      @dishes_json = answer[&#39;matches&#39;]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
+          
+          <code class="ruby">    render json: @dishes_json </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def search_detail</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="33">
+          
+          
+          <code class="ruby">    people = params[&#39;aggregator&#39;][&#39;people&#39;].to_i</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="34">
+          
+          
+          <code class="ruby">    days = params[&#39;aggregator&#39;][&#39;days&#39;].to_i</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="35">
+          
+          
+          <code class="ruby">    meals = []</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="36">
+          
+          
+          <code class="ruby">    meals &lt;&lt; {&#39;name&#39; =&gt; &#39;breakfast&#39;, &#39;ids&#39; =&gt; params[&#39;aggregator&#39;][&#39;selectedBreakfasts&#39;] || [] }</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="37">
+          
+          
+          <code class="ruby">    meals &lt;&lt; {&#39;name&#39; =&gt; &#39;lunch&#39;, &#39;ids&#39; =&gt; params[&#39;aggregator&#39;][&#39;selectedLunches&#39;] || [] }</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="38">
+          
+          
+          <code class="ruby">    meals &lt;&lt; {&#39;name&#39; =&gt; &#39;appetizer&#39;, &#39;ids&#39; =&gt; params[&#39;aggregator&#39;][&#39;selectedAppetizers&#39;] || [] }</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="39">
+          
+          
+          <code class="ruby">    meals &lt;&lt; {&#39;name&#39; =&gt; &#39;dinner&#39;, &#39;ids&#39; =&gt; params[&#39;aggregator&#39;][&#39;selectedDinners&#39;] || [] }</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="40">
+          
+          
+          <code class="ruby">    meals &lt;&lt; {&#39;name&#39; =&gt; &#39;drink&#39;, &#39;ids&#39; =&gt; params[&#39;aggregator&#39;][&#39;selectedDinners&#39;] || [] }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="42">
+          
+          
+          <code class="ruby">    servings_needed = people * days</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">    </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="44">
+          
+          
+          <code class="ruby">    @ingredients = {} # </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="45">
+          
+          
+          <code class="ruby">    @servings = {} # hash with keys: dish_id and value: numberOfServings</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">    </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="47">
+          
+          
+          <code class="ruby">    meals.each do |meal|</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="48">
+          
+          
+          <code class="ruby">      ids = meal[&#39;ids&#39;]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="49">
+          
+          
+          <code class="ruby">      dishes_name = []</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="50">
+          
+          
+          <code class="ruby">      ingredients = {} # hash with keys dish_id and value:[hash of ingredients]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="51">
+          
+          
+          <code class="ruby">      ids.each do |dish_id|</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="52">
+          
+          
+          <code class="ruby">        recipe = Recipe.find_by_yummly_id dish_id</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="53">
+          
+          
+          <code class="ruby">        if recipe != nil</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="54">
+          
+          
+          <code class="ruby">          found_recipe = JSON.parse(recipe.value)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="55">
+          
+          
+          <code class="ruby">          dishes_name &lt;&lt; found_recipe[&#39;name&#39;]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="56">
+          
+          
+          <code class="ruby">          @servings[dish_id] = found_recipe[&#39;numberOfServings&#39;].to_i</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="57">
+          
+          
+          <code class="ruby">          ingredients[dish_id] = found_recipe[&#39;ingredients&#39;]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby">        else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="59">
+          
+          
+          <code class="ruby">          if recipe = RecipeFetch.get_recipe_from_API(dish_id)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="60">
+          
+          
+          <code class="ruby">            dishes_name &lt;&lt; recipe[&#39;name&#39;]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="61">
+          
+          
+          <code class="ruby">            @servings[dish_id] = recipe[&#39;numberOfServings&#39;].to_i</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="62">
+          
+          
+          <code class="ruby">            ingredients[dish_id] = recipe[&#39;ingredients&#39;]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby">          else</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby">            # TODO rise error </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby">          end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby">        end  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="68">
+          
+          
+          <code class="ruby">      meal[&#39;dishes&#39;] = dishes_name</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="69">
+          
+          
+          <code class="ruby">      adapted_ingredients = IngredientFetch.calculate_ingredients_needed(meal[&#39;ids&#39;],servings_needed,@servings,ingredients)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="70">
+          
+          
+          <code class="ruby">      adapted_ingredients.each do |key,value|</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="71">
+          
+          
+          <code class="ruby">        if !@ingredients.has_key?(key)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="72">
+          
+          
+          <code class="ruby">          @ingredients[key]  = value</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="73">
+          
+          
+          <code class="ruby">        else</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby">          # TODO sum up the ingredient with the previous one</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="76">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="77">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="78">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="79">
+          
+          
+          <code class="ruby">    @shopping_list = {}</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="80">
+          
+          
+          <code class="ruby">    @shopping_list[&#39;meals&#39;] = meals</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="81">
+          
+          
+          <code class="ruby">    @shopping_list[&#39;ingredient&#39;] = ShoppingListFetch.aggregate_ingredients(@ingredients.values.flatten)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="82">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="83">
+          
+          
+          <code class="ruby">    render json: @shopping_list</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="84">
+          
+          
+          <code class="ruby">    </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="86">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="87">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="88">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="89">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="90">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="91">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="92">
+          
+          
+          <code class="ruby">  # GET /recipes/new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="93">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="94">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @recipe = Recipe.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="95">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="96">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="97">
+          
+          
+          <code class="ruby">  # GET /recipes/1/edit</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="98">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def edit</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="99">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="100">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="101">
+          
+          
+          <code class="ruby">  # POST /recipes</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="102">
+          
+          
+          <code class="ruby">  # POST /recipes.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="103">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="104">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    @recipe = Recipe.new(recipe_params)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="105">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="106">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="107">
+          <span class="hits">5</span>
+          
+          <code class="ruby">      if @recipe.save</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="108">
+          <span class="hits">6</span>
+          
+          <code class="ruby">        format.html { redirect_to @recipe, notice: &#39;Recipe was successfully created.&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="109">
+          <span class="hits">3</span>
+          
+          <code class="ruby">        format.json { render action: &#39;show&#39;, status: :created, location: @recipe }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="110">
+          
+          
+          <code class="ruby">      else</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="111">
+          <span class="hits">4</span>
+          
+          <code class="ruby">        format.html { render action: &#39;new&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="112">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        format.json { render json: @recipe.errors, status: :unprocessable_entity }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="113">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="114">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="115">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="116">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="117">
+          
+          
+          <code class="ruby">  # PATCH/PUT /recipes/1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="118">
+          
+          
+          <code class="ruby">  # PATCH/PUT /recipes/1.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="119">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="120">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="121">
+          <span class="hits">5</span>
+          
+          <code class="ruby">      if @recipe.update(recipe_params)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="122">
+          <span class="hits">4</span>
+          
+          <code class="ruby">        format.html { redirect_to @recipe, notice: &#39;Recipe was successfully updated.&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="123">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        format.json { head :no_content }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="124">
+          
+          
+          <code class="ruby">      else</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="125">
+          <span class="hits">6</span>
+          
+          <code class="ruby">        format.html { render action: &#39;edit&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="126">
+          <span class="hits">3</span>
+          
+          <code class="ruby">        format.json { render json: @recipe.errors, status: :unprocessable_entity }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="127">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="128">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="129">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="130">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="131">
+          
+          
+          <code class="ruby">  # DELETE /recipes/1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="132">
+          
+          
+          <code class="ruby">  # DELETE /recipes/1.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="133">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="134">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @recipe.destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="135">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="136">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      format.html { redirect_to recipes_url }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="137">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      format.json { head :no_content }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="138">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="139">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="140">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="141">
+          <span class="hits">1</span>
+          
+          <code class="ruby">private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="142">
+          
+          
+          <code class="ruby">  # Use callbacks to share common setup or constraints between actions.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="143">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def set_recipe</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="144">
+          <span class="hits">9</span>
+          
+          <code class="ruby">    @recipe = Recipe.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="145">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="146">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="147">
+          
+          
+          <code class="ruby">  # Never trust parameters from the scary internet, only allow the white list through.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="148">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def recipe_params</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="149">
+          <span class="hits">10</span>
+          
+          <code class="ruby">    params.require(:recipe).permit(:name, :yummly_id, :value)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="150">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="151">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="625e5b1578059b0d6bcc6d93de55ecf6fd515a10">
+  <div class="header">
+    <h3>app/controllers/shopping_lists_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>39</b> relevant lines. 
+      <span class="green"><b>39</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ShoppingListsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_action :set_shopping_list, only: [:show, :edit, :update, :destroy]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  # GET /shopping_lists</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  # GET /shopping_lists.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @shopping_lists = current_user.shopping_lists.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  # GET /shopping_lists/1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  # GET /shopping_lists/1.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @aggregator = JSON.parse(@shopping_list.aggregator)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    shopping_list = JSON.parse(@shopping_list.ingredients)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @meals = shopping_list[&#39;meals&#39;]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  # GET /shopping_lists/new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @shopping_list_name = params[&#39;name&#39;]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @search_parameter = Search.load_search_parameters()</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @shopping_list = current_user.shopping_lists.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  # GET /shopping_lists/1/edit</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def edit</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">  # POST /shopping_lists</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">  # POST /shopping_lists.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="32">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    @shopping_list = current_user.shopping_lists.new(shopping_list_params)</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="33">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    @shopping_lists = current_user.shopping_lists.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="35">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="36">
+          <span class="hits">5</span>
+          
+          <code class="ruby">      if @shopping_list.save</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="37">
+          <span class="hits">6</span>
+          
+          <code class="ruby">        format.html { redirect_to shopping_lists_path, notice: &#39;Shopping list was successfully created.&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="38">
+          <span class="hits">3</span>
+          
+          <code class="ruby">        format.json {}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">      else</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="40">
+          <span class="hits">4</span>
+          
+          <code class="ruby">        format.html { render action: &#39;new&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="41">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        format.json { render json: @shopping_list.errors, status: :unprocessable_entity }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">  # PATCH/PUT /shopping_lists/1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">  # PATCH/PUT /shopping_lists/1.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="49">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="50">
+          <span class="hits">5</span>
+          
+          <code class="ruby">      if @shopping_list.update(shopping_list_params)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="51">
+          <span class="hits">4</span>
+          
+          <code class="ruby">        format.html { redirect_to @shopping_list, notice: &#39;Shopping list was successfully updated.&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="52">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        format.json { head :no_content }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby">      else</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="54">
+          <span class="hits">6</span>
+          
+          <code class="ruby">        format.html { render action: &#39;edit&#39; }</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="55">
+          <span class="hits">3</span>
+          
+          <code class="ruby">        format.json { render json: @shopping_list.errors, status: :unprocessable_entity }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby">  # DELETE /shopping_lists/1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
+          
+          
+          <code class="ruby">  # DELETE /shopping_lists/1.json</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="63">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @shopping_list.destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="64">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="65">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      format.html { redirect_to shopping_lists_url }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="66">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      format.json { head :no_content }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby">    # Use callbacks to share common setup or constraints between actions.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def set_shopping_list</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="73">
+          <span class="hits">9</span>
+          
+          <code class="ruby">      @shopping_list = ShoppingList.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="76">
+          
+          
+          <code class="ruby">    # Never trust parameters from the scary internet, only allow the white list through.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="77">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def shopping_list_params</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="78">
+          <span class="hits">10</span>
+          
+          <code class="ruby">      params.require(:shopping_list).permit(:name, :aggregator, :ingredients, :user_id)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="c596e26bf9e0b89359d0866bb02f91b8f1d21e4b">
+  <div class="header">
+    <h3>app/models/ingredient_fetch.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>17</b> relevant lines. 
+      <span class="green"><b>17</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class IngredientFetch</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.calculate_ingredients_needed(meal,servings_needed,servings,ingredients)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="4">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    meal.each do |bre|</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="5">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      ingredients[bre].each do |ingredient|</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="6">
+          <span class="hits">4</span>
+          
+          <code class="ruby">        ingredient[&#39;qta&#39;] = calculate_ingredient_qta(ingredient[&#39;qta&#39;],servings_needed,meal,servings)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="9">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    return ingredients</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.calculate_ingredient_qta(original_qty,servings_needed,meal,servings)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="13">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    selected = servings_selected(meal,servings)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="14">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    if selected == 0</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">    else      </code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="17">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      servings_ratio = servings_needed / selected</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="18">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      ( (original_qty.to_f) * servings_ratio ).round(1) </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.servings_selected(meal,servings)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="23">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    servings_selected = 0.0</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="24">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    meal.each do |bre|</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="25">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      servings_selected = servings_selected + servings[bre]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="27">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    servings_selected</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="d13a9175bf091ee19e45f0b60c32e5fa692777b5">
+  <div class="header">
+    <h3>app/models/recipe.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Recipe &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :name, presence: true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :yummly_id, presence: true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :value, presence: true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="a6c82fcbff0dc9e3ec83d119c0a3521151d43b8c">
+  <div class="header">
+    <h3>app/models/recipe_fetch.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>68</b> relevant lines. 
+      <span class="green"><b>68</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class RecipeFetch</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  UNITS = [&quot;cups of&quot;,&quot;cup of&quot;,&quot;cups&quot;,&quot;cup&quot;,&quot;Cups&quot;,&quot;Cup&quot;,&quot;tablespoons&quot;,&quot;ounces&quot;,&quot;ounce&quot;,&quot;bunches of&quot;, &quot;bunch of&quot;, &quot;bunch&quot;,&quot;tablespoon&quot;,&quot;teaspoons&quot;,&quot;teaspoon&quot;,&quot;lb&quot;,&quot;pounds&quot;,&quot;pound&quot;,&quot;Pinches of&quot;,&quot;pinches of&quot;,&quot;Pinches&quot;,&quot;pinches&quot;,&quot;pinch of&quot;,&quot;Pinch of&quot;,&quot;pinch&quot;,&quot;Pinch&quot;,&quot;small&quot;,&quot;medium&quot;,&quot;large&quot;,&quot;whole&quot;,&quot;thick slices&quot;,&quot;thick slice&quot;,&quot;thin slices&quot;,&quot;thin slice&quot;,&quot;slices&quot;,&quot;slice&quot;,&quot;bottles&quot;,&quot;bottle&quot;,&quot;dashes&quot;,&quot;dashe&quot;]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.get_recipe_from_API(recipe_id)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="5">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      answer = HTTParty.get(yummly_url(recipe_id))</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="6">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      case answer.code</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">        when 200</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="8">
+          <span class="hits">3</span>
+          
+          <code class="ruby">          recipe = generate_recipe(recipe_id,answer)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">        when 404</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">          # TODO not found</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">        when 500...600</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">          # TODO BOOOM</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.yummly_url(recipe_id)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="17">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    search = &quot;http://api.yummly.com/v1/api/recipe/#{recipe_id}?_app_id=#{ENV[&#39;YUMMLY_APP_ID&#39;]}&amp;_app_key=#{ENV[&#39;YUMMLY_APP_KEY&#39;]}&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="18">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    URI.escape(search)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.generate_recipe(recipe_id,recipe)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="22">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    return nil if recipe.nil?  </code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="23">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    ingredients = create_ingredients_hash(recipe)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="24">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    recipe[&#39;ingredients&#39;] = ingredients     </code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="25">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    new_recipe = Recipe.create(name: recipe[&#39;name&#39;], yummly_id: recipe_id, value: JSON.generate(recipe))</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="26">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    return recipe</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.create_ingredients_hash(recipe)</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="30">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    return [] if !recipe</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="31">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    hashes_list = []</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="32">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    ingredients_list = recipe[&#39;ingredientLines&#39;]</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="33">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    return [] if !ingredients_list</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="34">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    ingredients_list.each do |item|</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="35">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      hashes_list &lt;&lt; create_ingredient_part(item)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="37">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    return hashes_list</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.create_ingredient_part(item)</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="41">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    part = {&#39;unit&#39; =&gt; &#39;unit&#39;,&#39;text&#39; =&gt; item}</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="42">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    desc = item.split(&#39;,&#39;)[0]</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="43">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    unit = find_unit(desc)</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="44">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    if unit != nil</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="45">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      part[&#39;qta&#39;], part[&#39;ingredient&#39;] = find_ingredient_qty_with_unit(desc.split(unit))</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="46">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      part[&#39;unit&#39;] = unit.gsub(/\s*of\s*\Z/, &quot;&quot;).strip # cups of </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">      # cant find unit of measure</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="49">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      part[&#39;qta&#39;], part[&#39;ingredient&#39;] = find_ingredient_qty_without_unit(desc)  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="51">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    part</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.find_unit(desc)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="55">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    return nil if desc == nil</code>
+        </li>
+      
+        <li class="covered" data-hits="84" data-linenumber="56">
+          <span class="hits">84</span>
+          
+          <code class="ruby">    UNITS.find{ |u| desc.include? u }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby">  # [&quot;&quot;,&quot;Salt&quot;]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby">  # [&quot;1 1/2&quot;, &quot; Tea &quot;] --&gt; [1.5, &#39;Tea&#39;]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.find_ingredient_qty_with_unit(splitted)</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="62">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    [string_to_number(splitted[0].strip), splitted[1].strip]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.find_ingredient_qty_without_unit(desc)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby">    # reg: at the beginning of the string it should have some numbers plus maybe a space followend by a fraction (= some number a / and some other numbers)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="67">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    reg = /\A(\d+)(\s*\d+\/\d+)?/ </code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="68">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    if desc == nil</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="69">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      res = nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="71">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      res = desc.match(reg)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="72">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="73">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    if res != nil</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="74">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      qta = res[0]</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="75">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      tot = string_to_number(qta)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="76">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      ingredient = desc.sub(reg,&quot;&quot;).strip # all that not match with reg exp</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="77">
+          
+          
+          <code class="ruby">    else </code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="78">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      tot = 1</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="79">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      ingredient = desc</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="81">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    return [tot, ingredient]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="82">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="84">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.string_to_number(qta)</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="85">
+          <span class="hits">8</span>
+          
+          <code class="ruby">    if qta.include? &#39;/&#39; # type: &quot;1/2&quot; or &quot;1 1/2&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="86">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      tot = fractional_to_number(qta)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="87">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="88">
+          <span class="hits">5</span>
+          
+          <code class="ruby">      tot = qta.to_f == 0 ? 1.0 : qta.to_f</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="89">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="90">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="91">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="92">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.fractional_to_number(qta)</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="93">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    if !qta.include?&quot;/&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="94">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      regx = /\d*(\.\d+)?/</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="95">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      qta = qta.match regx </code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="96">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      if qta[0] != &quot;&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="97">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        return qta[0].to_f</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="98">
+          
+          
+          <code class="ruby">      else</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="99">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        return 1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="100">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="101">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="102">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      int = 0</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="103">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      if qta.include? &quot; &quot; # &quot;1 1/2&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="104">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        int,qta  = qta.split(&quot; &quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="105">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="106">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      num,den = qta.split(&#39;/&#39;).map(&amp;:to_f)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="107">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      num == 0 ? 1 : ( num ||= 1 )</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="108">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      den ||= 1</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="109">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      tot = num/den</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="110">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      tot = tot + int.to_f</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="111">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="112">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="113">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="79d41b4270db6912f37b0bb30cb9dd7c191875d8">
+  <div class="header">
+    <h3>app/models/search.rb</h3>
+    <h4><span class="red">16.67 %</span> covered</h4>
+    <div>
+      <b>18</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>15</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Search &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.load_search_parameters()</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">    search_parameter = {}</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">    parameters = [&quot;diet&quot;,&quot;allergy&quot;,&quot;cuisine&quot;,&quot;course&quot;,&quot;holiday&quot;]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
+          
+          <code class="ruby">    parameters.each do |parameter|</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">      search = self.find_by_name(parameter)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">      if search == nil</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">        search = get_from_API(parameter);</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">      search_parameter[&quot;#{parameter}&quot;] = search</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">    return search_parameter</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.get_from_API(parameter)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="20">
+          
+          
+          <code class="ruby">    url = &quot;http://api.yummly.com/v1/api/metadata/#{parameter}?_app_id=#{ENV[&#39;YUMMLY_APP_ID&#39;]}&amp;_app_key=#{ENV[&#39;YUMMLY_APP_KEY&#39;]}&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="21">
+          
+          
+          <code class="ruby">    first = /set_metadata\(&#39;[^&#39;]*&#39;, /</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">    last = /\);\Z/</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="23">
+          
+          
+          <code class="ruby">    answer = HTTParty.get(URI.escape(url))</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="24">
+          
+          
+          <code class="ruby">    answer.gsub!(last, &quot;&quot;).gsub!(first,&quot;&quot;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="25">
+          
+          
+          <code class="ruby">    search = self.create(name:parameter, value: JSON.generate(answer))</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="26">
+          
+          
+          <code class="ruby">    return search</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="369bd2126ef2aa1ed18e762b23df049d4ee677bb">
+  <div class="header">
+    <h3>app/models/shopping_list.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ShoppingList &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :name, presence: true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :aggregator, presence: true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :ingredients, presence: true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="777c2d24a943708a2ecbf953a5110dbe6be19717">
+  <div class="header">
+    <h3>app/models/shopping_list_fetch.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>24</b> relevant lines. 
+      <span class="green"><b>24</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ShoppingListFetch</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby"> def self.aggregate_ingredients(ingredients)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="4">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      aggregate = []</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="5">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      ingredients.each do |ingredient|</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="6">
+          <span class="hits">8</span>
+          
+          <code class="ruby">        actual_ingredient = ingredient[&#39;ingredient&#39;]</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="7">
+          <span class="hits">8</span>
+          
+          <code class="ruby">        hash_unit_qta = {&#39;unit&#39; =&gt; ingredient[&#39;unit&#39;], &#39;qta&#39; =&gt; ingredient[&#39;qta&#39;]}</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="8">
+          <span class="hits">8</span>
+          
+          <code class="ruby">        ingredient_allocated = false</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="9">
+          <span class="hits">8</span>
+          
+          <code class="ruby">        aggregate.each do |hash_item|</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="10">
+          <span class="hits">4</span>
+          
+          <code class="ruby">          if hash_item[&#39;ingredient&#39;] == actual_ingredient</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="11">
+          <span class="hits">3</span>
+          
+          <code class="ruby">            unit_allocated = false</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="12">
+          <span class="hits">3</span>
+          
+          <code class="ruby">            hash_item[&#39;value&#39;].each do |unit|</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="13">
+          <span class="hits">3</span>
+          
+          <code class="ruby">              key_to_find = hash_unit_qta[&#39;unit&#39;]</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="14">
+          <span class="hits">3</span>
+          
+          <code class="ruby">              if unit[&#39;unit&#39;] == key_to_find</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="15">
+          <span class="hits">2</span>
+          
+          <code class="ruby">                unit[&#39;qta&#39;] = unit[&#39;qta&#39;] + hash_unit_qta[&#39;qta&#39;]</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="16">
+          <span class="hits">2</span>
+          
+          <code class="ruby">                unit_allocated = true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">              end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">            end</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="19">
+          <span class="hits">3</span>
+          
+          <code class="ruby">            if unit_allocated == false</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">              hash_item[&#39;value&#39;] &lt;&lt; hash_unit_qta</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">            end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">            # puts &quot;new hash_item : #{hash_item}&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="23">
+          <span class="hits">3</span>
+          
+          <code class="ruby">            ingredient_allocated = true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">          end  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="26">
+          <span class="hits">8</span>
+          
+          <code class="ruby">        if ingredient_allocated == false</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="27">
+          <span class="hits">5</span>
+          
+          <code class="ruby">            new_hash = {}</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="28">
+          <span class="hits">5</span>
+          
+          <code class="ruby">            new_hash[&#39;ingredient&#39;] = actual_ingredient</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="29">
+          <span class="hits">5</span>
+          
+          <code class="ruby">            new_hash[&#39;value&#39;] = [hash_unit_qta]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">            # puts &quot;#{actual_ingredient} not present&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">            # puts &quot;new_hash : #{new_hash}&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="32">
+          <span class="hits">5</span>
+          
+          <code class="ruby">            aggregate &lt;&lt; new_hash</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="35">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      return aggregate</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+      </div>
+    </div>
+  </body>
+</html>

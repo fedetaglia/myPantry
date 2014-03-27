@@ -1,0 +1,43 @@
+<h1>Listing recipes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Course</th>
+      <th>Yummly</th>
+      <th>Url</th>
+      <th>Img url</th>
+      <th>Number of servings</th>
+      <th>Source recipe url</th>
+      <th>Source display name</th>
+      <th>Fetch json</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @recipes.each do |recipe| %>
+      <tr>
+        <td><%= recipe.name %></td>
+        <td><%= recipe.course %></td>
+        <td><%= recipe.yummly_id %></td>
+        <td><%= recipe.url %></td>
+        <td><%= recipe.img_url %></td>
+        <td><%= recipe.number_of_servings %></td>
+        <td><%= recipe.source_recipe_url %></td>
+        <td><%= recipe.source_display_name %></td>
+        <td><%= recipe.fetch_json %></td>
+        <td><%= link_to 'Show', recipe %></td>
+        <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
+        <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Recipe', new_recipe_path %>

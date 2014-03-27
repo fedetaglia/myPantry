@@ -1,0 +1,53 @@
+<%= form_for(@recipe) do |f| %>
+  <% if @recipe.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@recipe.errors.count, "error") %> prohibited this recipe from being saved:</h2>
+
+      <ul>
+      <% @recipe.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :course %><br>
+    <%= f.text_field :course %>
+  </div>
+  <div class="field">
+    <%= f.label :yummly_id %><br>
+    <%= f.text_field :yummly_id %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :img_url %><br>
+    <%= f.text_field :img_url %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_servings %><br>
+    <%= f.text_field :number_of_servings %>
+  </div>
+  <div class="field">
+    <%= f.label :source_recipe_url %><br>
+    <%= f.text_field :source_recipe_url %>
+  </div>
+  <div class="field">
+    <%= f.label :source_display_name %><br>
+    <%= f.text_field :source_display_name %>
+  </div>
+  <div class="field">
+    <%= f.label :fetch_json %><br>
+    <%= f.text_field :fetch_json %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

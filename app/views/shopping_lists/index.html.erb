@@ -1,0 +1,26 @@
+<h1>my shopping list</h1>
+
+
+<div class="row new-shopping-list-form">
+  <%= form_tag("shopping_lists/new", method:"get", class: 'form-inline') do %>
+    <%= text_field_tag(:name, nil, class: 'form-control') %>
+    <%= submit_tag("New Shopping list", {class: "btn btn-default"})%>
+  <% end %>
+</div>
+
+<div class="row">
+  <div class="list-index">
+    <% @shopping_lists.each do |shopping_list| %>
+      
+      <%= link_to shopping_list do %>
+        <div class="list-item">
+          <p><%= shopping_list.name %></p>  
+
+        </div>
+      <% end %>
+       
+    <% end %>
+
+  </div>
+</div>
+
