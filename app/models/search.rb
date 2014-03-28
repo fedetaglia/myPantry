@@ -6,7 +6,8 @@ class Search < ActiveRecord::Base
     PARAMETERS.each do |parameter|
       search = self.find_by_name parameter
       if search == nil
-        search = self.create(name:parameter, value: JSON.generate(get_from_API(parameter)))
+        answer = get_from_API(parameter)
+        search = self.create(name:parameter, value: JSON.generate(JSON.parse(answer)))
       end
       search_parameter["#{parameter}"] = search
     end
