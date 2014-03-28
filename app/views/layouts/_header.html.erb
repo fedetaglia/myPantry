@@ -19,7 +19,7 @@
             
           <% if user_signed_in? %>
             <li><%= link_to "My shopping Lists", shopping_lists_path %></li>
-            <li><%= link_to current_user.email, edit_user_registration_path,  :class => 'btn' %></li>
+            <li><%= link_to current_user.username ? current_user.username : current_user.email, edit_user_registration_path,  :class => 'btn' %></li>
             <li><%= link_to "Logout", destroy_user_session_path, method: :delete,  :class => 'btn'  %></li>
           <% else %>
             <li><%= link_to "Sign up", new_user_registration_path, :class => 'btn btn-default', id: "sign-up"  %></li>

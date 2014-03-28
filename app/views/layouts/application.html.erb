@@ -22,11 +22,11 @@
 <%= render 'layouts/footer' %>
 
 <script>
-  window.onload = function () { 
-  $('.row-alert').on("click",'.close',function() {
+  $(document).ready(function() { 
+  $('.row-alert').on('click','.close',function() {
     this.parentNode.parentNode.removeChild(this.parentNode);
   });
-}
+})
 </script>
 
 </body>

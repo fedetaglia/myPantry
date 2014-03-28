@@ -31,6 +31,7 @@ var step4 = {
     target.appendChild(spinner.el);
     
     result.done(function(data){
+      executing = false
       spinner.stop();
       if ( $(".dishes-list").length > 0 ) {
         $('.dishes-list').empty();
@@ -53,7 +54,9 @@ var step4 = {
   },
   nextButtonListener:function(){
   $('.next').on("click",function(){
+    if (executing == true) return;
     if (step4.check()) {
+      executing = true;
       $('.step4').removeClass("selected")
       $(this).off('click');
       var selected = $('.dish-selected')

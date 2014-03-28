@@ -39,6 +39,7 @@
   var allCuisines = <%= raw JSON.parse(@search_parameter["cuisine"].value).to_json %>
   var allCourses = <%= raw JSON.parse(@search_parameter["course"].value).to_json %>
   var allHolidays = <%= raw JSON.parse(@search_parameter["holiday"].value).to_json %>
+  var executing = false;
   var target = ""
   var spinner = ""
 

@@ -32,6 +32,7 @@ var step6 = {
     
     result.done(function(data){
       spinner.stop();
+      executing = false;
       if ( $(".dishes-list").length > 0 ) {
         $('.dishes-list').empty();
       } else {
@@ -53,7 +54,9 @@ var step6 = {
   },
   nextButtonListener:function(){
   $('.next').on("click",function(){
+    if (executing == true) return;
     if (step6.check()) {
+      executing = true;
       $('.step6').removeClass("selected")
       $(this).off('click');
       var selected = $('.dish-selected')
@@ -61,7 +64,7 @@ var step6 = {
       $.each(selected, function(index,value){
          ids.push(value.id)
       })
-      step6.aggregator.selectedDinners = ids
+      step6.aggregator.selectedDrinks = ids
       step7.initialize(step6.aggregator)
     }
   })

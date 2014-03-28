@@ -37,7 +37,7 @@ class RecipesController < ApplicationController
     meals << {'name' => 'lunch', 'ids' => params['aggregator']['selectedLunches'] || [] }
     meals << {'name' => 'appetizer', 'ids' => params['aggregator']['selectedAppetizers'] || [] }
     meals << {'name' => 'dinner', 'ids' => params['aggregator']['selectedDinners'] || [] }
-    meals << {'name' => 'drink', 'ids' => params['aggregator']['selectedDinners'] || [] }
+    meals << {'name' => 'drink', 'ids' => params['aggregator']['selectedDrinks'] || [] }
 
     servings_needed = people * days
     

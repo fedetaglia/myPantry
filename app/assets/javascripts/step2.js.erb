@@ -21,7 +21,9 @@ var step2 = {
 
   nextButtonListener: function(){
     $('.next').on("click",function(){
+      if (executing == true) return;
       if (step2.check()) {
+        executing = true;
         $('.step2').removeClass("selected");
         $(this).off('click');
         selected = $('.dish-selected');
@@ -48,8 +50,9 @@ var step2 = {
     var target = document.getElementById('spin');
     var spinner = new Spinner(opts).spin();
     target.appendChild(spinner.el);
-    
+
     result.done(function(data){
+      executing = false;
       spinner.stop();
       if ( $(".dishes-list").length > 0 ) {
         $('.dishes-list').empty();

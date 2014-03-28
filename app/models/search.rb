@@ -1,30 +1,38 @@
 class Search < ActiveRecord::Base
-
+  PARAMETERS = ["diet","allergy","cuisine","course","holiday"]
 
   def self.load_search_parameters()
     search_parameter = {}
-    parameters = ["diet","allergy","cuisine","course","holiday"]
-    parameters.each do |parameter|
-      search = self.find_by_name(parameter)
+    PARAMETERS.each do |parameter|
+      search = self.find_by_name parameter
       if search == nil
-        search = get_from_API(parameter);
+        search = self.create(name:parameter, value: JSON.generate(get_from_API(parameter)))
       end
       search_parameter["#{parameter}"] = search
     end
-    return search_parameter
+    search_parameter
   end
-
-
 
   def self.get_from_API(parameter)
-    url = "http://api.yummly.com/v1/api/metadata/#{parameter}?_app_id=#{ENV['YUMMLY_APP_ID']}&_app_key=#{ENV['YUMMLY_APP_KEY']}"
-    first = /set_metadata\('[^']*', /
-    last = /\);\Z/
-    answer = HTTParty.get(URI.escape(url))
-    answer.gsub!(last, "").gsub!(first,"")
-    search = self.create(name:parameter, value: JSON.generate(answer))
-    return search
+    answer = HTTParty.get(yummly_parameter_url(parameter))
+    case answer.code
+      when 200
+        answer_json(answer)
+      when 404
+        # TODO not found
+      when 500...600
+        #TODO BOOM
+    end
   end
 
+  def self.answer_json(answer)
+    first = /set_metadata\('[^']*', /
+    last = /\);\Z/
+    answer.gsub!(last, "").gsub!(first,"")
+  end
 
+  def self.yummly_parameter_url(parameter)
+    url = "http://api.yummly.com/v1/api/metadata/#{parameter}?_app_id=#{ENV['YUMMLY_APP_ID']}&_app_key=#{ENV['YUMMLY_APP_KEY']}"
+    URI.escape(url)
+  end
 end

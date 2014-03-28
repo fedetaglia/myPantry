@@ -1,13 +1,13 @@
 
-<h3><%= @shopping_list.name %></h3>
+<h3 class='shopping-list-title'><%= @shopping_list.name %></h3> <span class="delete-shopping-list">( <%= link_to 'delete', @shopping_list, method: :delete, data: { confirm: 'Are you sure?' } %> )</span> 
 
 
 
 <div class="row">
   <div class="col-md-6">
     <h4>Details</h4>
-  <p>number of people : <%= @aggregator['people'] %></p>
-  <p>number of days : <%= @aggregator['days'] %></p>
+  <p class='list-detail'>People : <%= @aggregator['people'] %></p>
+  <p class='list-detail'>Days : <%= @aggregator['days'] %></p>
 
   <% @meals.each do |meal| %>
     <p class="meal"><%= meal['name'] %></p>
@@ -24,9 +24,6 @@
   </div>
 </div>
 
-<%= link_to 'delete', @shopping_list, method: :delete, data: { confirm: 'Are you sure?' } %>
-
-<%= link_to 'Back', shopping_lists_path %>
 
 
 <script>

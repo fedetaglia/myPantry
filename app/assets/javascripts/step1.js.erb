@@ -143,7 +143,9 @@ var step1 = {
 
   nextButtonListener:function(){
     $('.next').on("click",function(){
+      if (executing == true) return;
       if (step1.check()) {
+        executing = true;
         $(this).off('click');
         $('.step1').removeClass("selected")
         step2.initialize(step1.aggregator)
