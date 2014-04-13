@@ -6,8 +6,11 @@
 <div class="row">
   <div class="col-md-6">
     <h4>Details</h4>
-  <p class='list-detail'>People : <%= @aggregator['people'] %></p>
+  <div class="shopping-detail">
+  <div class="quantity-selected">
+          <p class='list-detail'>People : <%= @aggregator['people'] %></p>
   <p class='list-detail'>Days : <%= @aggregator['days'] %></p>
+  </div>
 
   <% @meals.each do |meal| %>
     <p class="meal"><%= meal['name'] %></p>
@@ -15,6 +18,7 @@
         <p class="dish"><%= dish %></p>
       <% end %>
   <% end %>
+  </div>
   </div>
   <div class="col-md-6">
     <h4>shopping list</h4>

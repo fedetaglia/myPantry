@@ -146,7 +146,7 @@ $main_step2 : $main_step2 + #444;
 }
 
 .new_shopping_list_button:hover {
-  background: $azzurrone;
+  background: $azzurrone; 
 }
 
 .dishes-list {
@@ -198,9 +198,24 @@ $main_step2 : $main_step2 + #444;
   font-size: 15px;
 }
 
+.shopping-detail {
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: lightyellow;
+    -webkit-box-shadow: 3px 3px 3px 3px #777;
+  -moz-box-shadow: 3px 3px 3px 3px #777;
+  box-shadow: 3px 3px 3px 3px #777;
+
+}
+
+.quantity-selected {
+  margin-bottom: 20px;
+}
 
 .shopping-list {
   margin: auto;
+  margin-bottom: 70px;
   padding: 10px;
   width: 600px;
   background-color: lightyellow;
