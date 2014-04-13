@@ -15,17 +15,12 @@
 /* http://colorschemedesigner.com/#0q416w0w0w0w0 */
 @import "bootstrap";
 
-@font-face {
-    font-family: 'barrioregular';
-    src: asset-url('barrio-regular-webfont.eot');
-    src: asset-url('barrio-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         asset-url('barrio-regular-webfont.woff') format('woff'),
-         asset-url('barrio-regular-webfont.ttf') format('truetype'),
-         asset-url('barrio-regular-webfont.svg#barrioregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+$arancione : #FF5900;
+$arancino : #FF8F40;
+$azzurrino : #A1E8DE;
+$azzurro : #5DD0C0;
+$azzurrone: #1E8779;
 
-}
 
 $navbar : #FF6A00;
 $light_navbar : $navbar + #444;
@@ -55,7 +50,7 @@ $main_step2 : $main_step2 + #444;
   margin: auto;
   text-align: center;
   .selected {
-    background-color: lightgrey;
+    background-color: $arancino;
   }
 }
 
@@ -102,27 +97,27 @@ $main_step2 : $main_step2 + #444;
 
 .people {
   font-size: 20px;
-  color: #AAA;
+  color: #666;
   
   .hover{
-    color: $light_step1;
+    color: $azzurrone;
   }
 
   .selected {
-    color: $main_step1;
+    color: $arancino;
   }
 }
 
 .days {
   font-size: 20px;
-  color: #AAA;
+  color: #666;
   
   .hover {
-    color: $light_step1;
+    color: $azzurrone;
   }
 
   .selected {
-    color: $main_step1;
+    color: $arancino;
   }
 }
 
@@ -147,7 +142,11 @@ $main_step2 : $main_step2 + #444;
   float: right;
   width: 160px;
   text-align: center;
-  background: $landing;
+  background: $arancino;
+}
+
+.new_shopping_list_button:hover {
+  background: $azzurrone;
 }
 
 .dishes-list {
@@ -202,10 +201,15 @@ $main_step2 : $main_step2 + #444;
 
 .shopping-list {
   margin: auto;
+  padding: 10px;
   width: 600px;
+  background-color: lightyellow;
+  -webkit-box-shadow: 3px 3px 3px 3px #777;
+  -moz-box-shadow: 3px 3px 3px 3px #777;
+  box-shadow: 3px 3px 3px 3px #777;
 
   .list-item {
-    background-color: #eee;
+    
     border-radius: 5px;
     margin: 10px;
     padding: 5px;
@@ -263,12 +267,13 @@ $main_step2 : $main_step2 + #444;
     height: 150px;
     cursor:pointer;
     border-radius: 10px;
-    background: #5DD0C0;
+    background: $arancino; /*#5DD0C0;*/
     margin: 20px;
+
   }
 
   .list-item:hover{
-    background:#FF8F40;
+    background:$azzurrone;
   };
 
   a {
