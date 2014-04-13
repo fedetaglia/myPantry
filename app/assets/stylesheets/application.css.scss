@@ -15,6 +15,18 @@
 /* http://colorschemedesigner.com/#0q416w0w0w0w0 */
 @import "bootstrap";
 
+@font-face {
+    font-family: 'barrioregular';
+    src: asset-url('barrio-regular-webfont.eot');
+    src: asset-url('barrio-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         asset-url('barrio-regular-webfont.woff') format('woff'),
+         asset-url('barrio-regular-webfont.ttf') format('truetype'),
+         asset-url('barrio-regular-webfont.svg#barrioregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 $navbar : #FF6A00;
 $light_navbar : $navbar + #444;
 

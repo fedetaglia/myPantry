@@ -57,6 +57,7 @@ class RecipeFetch
   end
 
   # ["","Salt"]
+  # " 1 1/2 cups of Tea, boiled with balbalba"
   # ["1 1/2", " Tea "] --> [1.5, 'Tea']
   def self.find_ingredient_qty_with_unit(splitted)
     [string_to_number(splitted[0].length > 0 ? splitted[0].strip : ""), splitted[1].strip]
